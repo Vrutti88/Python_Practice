@@ -189,11 +189,10 @@ print(f"Number after reversing is: {rev}")
 
 # Q24) Write a simple “guess the number” game. The program randomly generates a number between 1 and 10, and the user has to guess it.
 import random
-number_to_guess = random.randint(1, 10)
-user_guess = None
 print("Welcome to 'Guess the Number'!")
 print("I have selected a number between 1 and 10. Try to guess it.")
-while user_guess != number_to_guess:
+number_to_guess = random.randint(1, 10)
+while True:
     user_guess = int(input("Enter your guess: "))
     if user_guess < number_to_guess:
         print("Too low! Try again.")
@@ -201,6 +200,7 @@ while user_guess != number_to_guess:
         print("Too high! Try again.")
     else:
         print(f"Congratulations! You guessed the number {number_to_guess} correctly.")
+        break
 
 
 # Q25) Write a program that checks if a number is a palindrome (e.g., 121 -> palindrome).

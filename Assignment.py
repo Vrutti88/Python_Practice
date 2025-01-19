@@ -153,10 +153,10 @@ print(sum)
 n=int(input("Enter a number: "))
 for i in range(2,int((n/2)+1)):
     if (n%i==0):
-        print("not prime")
+        print(f"{n} is not prime number")
         break
 else:
-    print("prime")
+    print(f"{n} is prime number")
 
 
 # Q21) Write a program that counts the number of vowels in a string.
